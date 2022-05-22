@@ -9,16 +9,22 @@ This is my project submission for Project3: Where I Am of [Udacity Nanodegree - 
     mkdir build
     catkin_make
     ```
-3. Source the workspace:
+3. Source the workspace and roslaunch the world.launch:
     ```
     source devel/setup.bash
-    ```
-4. Launch the simulation world and amcl nodes
-    ```
     roslaunch my_robot world.launch
+    ```
+4. Open another terminal and roslaunch the amcl.launc (remember to source the workspace again)
+    ```
     roslaunch my_robot amcl.launch
     ```
-5. Rosrun the teleop
+5. Open a new terminal and rosrun the teleop (remember to source the workspace again)
     ```
     rosrun teleop_twist_keyboard teleop_twist_keyboard.py
     ```
+6. Navigate the robot around and observe the arrows.
+
+## Screenshots
+![Screenshot01](https://github.com/tka-andrew/RoboND-Project3/blob/master/Screenshots/screenshot01.png?raw=true)
+
+![Screenshot02](https://github.com/tka-andrew/RoboND-Project3/blob/master/Screenshots/screenshot02.png?raw=true)
